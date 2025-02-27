@@ -1,16 +1,29 @@
-.main-body {
-  min-height: 80vh;
-  padding: 15px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: spin infinite 20s linear;  /* اضافه کردن انیمیشن چرخش */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.App {
   text-align: center;
 }
 
-
-.inner-search-form {
-  padding: 10px;
-
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-
-h3 {
-  color : green
+.App-link {
+  color: #61dafb;
 }
